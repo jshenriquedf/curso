@@ -14,8 +14,7 @@ import br.com.henrique.curso.services.CategoriaService;
 @RequestMapping(value="/categorias")
 public class CategoriaResource {
 
-	@Autowired
-	private CategoriaService service;
+	@Autowired private CategoriaService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<Categoria> find(@PathVariable Integer id) {
